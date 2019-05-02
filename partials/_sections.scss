@@ -1,0 +1,212 @@
+// ****DIGITAL DESIGNER****
+
+.digitalDesigner {
+	height: 200vh;
+	background-color: #DF54FF;
+	position: relative;
+}
+
+.triangle1 {
+	position: absolute;
+	width: 20%;
+	bottom: 20%;
+	left: 53%;
+}
+
+// ****AVID CODER****
+
+.avidCoder {
+	height: 200vh;
+	background-color: #66FFB2;
+}
+
+// ****SPIRITUAL AF****
+
+.spiritualAF {
+	height: 200vh;
+	background-color: #9572FF;
+}
+
+// ****WANNABE MODEL****
+
+.wannabeModel {
+	height: 200vh;
+	background-color: #FF79D5;
+}
+
+.wmMain {
+	display: flex;
+	justify-content: center;
+}
+
+.wm1 {
+	margin-top: 100px;
+}
+
+// ****SOLO TRAVELLER****
+
+.soloTraveller {
+	height: 300vh;
+	background-color: #5BD0FF;
+}
+
+.stMain {
+	display: flex;
+	justify-content: center;
+}
+
+.st1 {
+	margin-top: 100px;
+}
+
+.videoContainer {	
+	display: block;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+.video, .video2 {
+	display: block;
+	width: 270px;
+	height: 480px;
+	opacity: 0.9;
+}
+
+
+
+
+// ****HEALTH & FITNESS ENTHUSIAST****
+
+.healthFitness {
+	height: 200vh;
+	background-color: #FF729C;
+
+}
+
+// ****AMATEUR PHOTOGRAPHER****
+
+.amateurPhotographer {
+	height: 200vh;
+	background-color: #80A4ED;
+}
+
+.pMain {
+	display: flex;
+	justify-content: center;
+}
+
+.p1 {
+	margin-top: 100px;
+}
+
+// ****WORK WITH ME SECTION****
+.workWithMe {
+	height: 100vh;
+	background-image: url(../assets/workWithMe.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+	h2 {
+		color: white;
+		text-transform: uppercase;
+		font-size: 40px;
+		font-family: 'Roboto Condensed', sans-serif;
+		margin: 0;
+		text-align: left;
+		padding-left: 10px;
+	}
+
+	img {
+		height: 50%;
+
+	}
+	.iconsTablet {
+		display: none;
+	}
+}
+
+.flexIcons {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+}
+
+.iconsFull {
+	width: 80%;
+}
+
+.wrapper {
+	max-width: 400px;
+	margin: 0;
+	padding-left: 50px;
+	padding-top: 100px;
+}
+
+form {
+	height: 400px;
+
+}
+
+input {
+	display: block;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 5px;
+	background: none;
+	border: white 2px solid;
+	margin: 10px;
+	width: 300px;
+	color: white;
+}
+
+::placeholder {
+	color: white;
+}
+
+textarea {
+	display: block;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 5px;
+	background: none;
+	border: white 2px solid;
+	margin: 10px;
+	width: 300px;
+	color: white;
+}
+
+button {
+	display: block;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 5px;
+	background: none;
+	border: white 2px solid;
+	margin: 10px;
+	width: 300px;
+	color: white;
+	text-transform: uppercase;
+}
+
+// ***TABLET***
+
+@media screen and (max-width: 900px) {
+
+	.workWithMe .iconsTablet {
+		display: block;
+		width: 30%;
+		// transform: scale(1.7);
+	}
+	.workWithMe .iconsFull {
+		display: none;
+	}
+
+	.flexIcons {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+	}
+
+
+}
