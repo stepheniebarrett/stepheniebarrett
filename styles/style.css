@@ -180,6 +180,9 @@ header {
   height: 200vh;
   background-color: #80A4ED; }
 
+#skrollr-body {
+  height: 100%; }
+
 img {
   border: 3px solid rgba(0, 0, 0, 0);
   -webkit-transition: border 0.5s;
