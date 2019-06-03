@@ -180,9 +180,17 @@ header {
   height: 200vh;
   background-color: #80A4ED; }
 
+img {
+  border: 3px solid rgba(0, 0, 0, 0);
+  -webkit-transition: border 0.5s;
+  -o-transition: border 0.5s;
+  transition: border 0.5s; }
+
+img:hover {
+  border: 3px solid white; }
+
 .digitalDesigner {
-  height: 350vh;
-  background-color: #DF54FF;
+  height: 2200px;
   position: relative; }
   .digitalDesigner .designerVideo {
     display: -webkit-box;
@@ -203,7 +211,7 @@ header {
 .ddtitle {
   position: absolute;
   width: 30%;
-  bottom: 80%;
+  bottom: 70%;
   left: 10%;
   z-index: 3;
   opacity: 0.9; }
@@ -217,9 +225,9 @@ header {
 
 .ddtriangle2 {
   position: absolute;
-  width: 20%;
+  width: 25%;
   bottom: 40%;
-  left: 75%;
+  left: 70%;
   z-index: 0; }
 
 .ddtriangle3 {
@@ -237,19 +245,22 @@ header {
 
 .dd1 {
   position: absolute;
+  bottom: 45%;
   left: 20%;
-  z-index: 1; }
+  z-index: 1;
+  opacity: 0.9;
+  width: 20%; }
 
 .dd2 {
   position: absolute;
-  bottom: 50%;
+  bottom: 45%;
   left: 54%;
   z-index: 1;
   opacity: 0.9; }
 
 .dd3 {
   position: absolute;
-  bottom: 28%;
+  bottom: 30%;
   left: 39%;
   z-index: 1;
   opacity: 0.9; }
@@ -277,20 +288,19 @@ header {
 
 .dd7 {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 60%;
-  z-index: 2;
+  z-index: 1;
   opacity: 0.9; }
 
 .avidCoder {
-  height: 250vh;
-  background-color: #66FFB2;
+  height: 1500px;
   position: relative; }
 
 .actitle {
   position: absolute;
   width: 30%;
-  bottom: 88%;
+  bottom: 18%;
   left: 66%;
   z-index: 3;
   opacity: 0.9; }
@@ -312,7 +322,7 @@ header {
 .actriangle3 {
   position: absolute;
   bottom: 13%;
-  left: 30%;
+  left: 40%;
   z-index: 2; }
 
 .actriangle4 {
@@ -338,7 +348,7 @@ header {
 
 .ac3 {
   position: absolute;
-  bottom: 37%;
+  bottom: 33%;
   left: 30%;
   z-index: 1;
   opacity: 0.9; }
@@ -352,14 +362,14 @@ header {
 
 .ac5 {
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   left: 54%;
   z-index: 1;
   opacity: 0.9; }
 
 .ac6 {
   position: absolute;
-  bottom: 13%;
+  bottom: 2%;
   left: 5%;
   z-index: 1;
   opacity: 0.9; }
@@ -374,7 +384,6 @@ header {
 
 .spiritualAF {
   height: 350vh;
-  background-color: #9572FF;
   position: relative; }
   .spiritualAF .spiritualAFVideo {
     display: -webkit-box;
@@ -485,7 +494,6 @@ header {
 
 .wannabeModel {
   height: 350vh;
-  background-color: #FF79D5;
   position: relative; }
   .wannabeModel .wannabeModelVideo {
     display: -webkit-box;
@@ -589,7 +597,6 @@ header {
 
 .soloTraveller {
   height: 350vh;
-  background-color: #5BD0FF;
   position: relative; }
   .soloTraveller .soloTravellerVideo {
     display: -webkit-box;
@@ -707,7 +714,6 @@ header {
 
 .healthFitness {
   height: 350vh;
-  background-color: #FF729C;
   position: relative; }
   .healthFitness .healthFitnessVideo {
     display: -webkit-box;
@@ -824,8 +830,7 @@ header {
   opacity: 0.9; }
 
 .amateurPhotographer {
-  height: 350vh;
-  background-color: #80A4ED;
+  height: 2200px;
   position: relative; }
   .amateurPhotographer .photographerVideo {
     display: -webkit-box;
