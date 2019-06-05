@@ -204,8 +204,6 @@ img:hover {
     justify-content: center; }
     .digitalDesigner .designerVideo video {
       opacity: 0.5;
-      -webkit-box-shadow: 10px 10px 20px black;
-      box-shadow: 10px 10px 20px black;
       margin-top: 10%;
       -webkit-transform: scale(1.27);
       -ms-transform: scale(1.27);
@@ -213,9 +211,9 @@ img:hover {
 
 .ddtitle {
   position: absolute;
-  width: 30%;
+  width: 25%;
   bottom: 70%;
-  left: 10%;
+  left: 15%;
   z-index: 3;
   opacity: 0.9; }
 
@@ -229,9 +227,8 @@ img:hover {
 .ddtriangle2 {
   position: absolute;
   width: 25%;
-  bottom: 40%;
-  left: 70%;
-  z-index: 0; }
+  bottom: 65%;
+  left: 42%; }
 
 .ddtriangle3 {
   position: absolute;
@@ -245,6 +242,13 @@ img:hover {
   bottom: 33%;
   left: 23%;
   z-index: 3; }
+
+.ddWhiteTriangle {
+  position: absolute;
+  width: 8%;
+  bottom: 70%;
+  left: 78%;
+  z-index: 2; }
 
 .dd1 {
   position: absolute;

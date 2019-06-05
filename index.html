@@ -18,7 +18,7 @@
 	 			<video autoplay muted loop>
 	 			<source src="assets/digitalDesigner.mp4" type="video/mp4"></video>
 	 		</div>
-	 		<img class="ddtitle med1" src="assets/ddtitle.png">
+	 		<img class="ddtitle title" src="assets/ddtitle.png">
 	 		<img class="dd1 med2" src="assets/dd1.jpg">
 	 		<img class="dd2 fast1" src="assets/dd2.jpg">
 	 		<img class="dd3 fast2" src="assets/dd3.jpg">
@@ -26,10 +26,11 @@
 	 		<img class="dd5 med1" src="assets/dd5.jpg">
 	 		<img class="dd6 fast3" src="assets/dd6.jpg">
 	 		<img class="dd7 fast1" src="assets/dd7.png">
-	 		<img class="ddtriangle2 fast2" src="assets/digitalDesignerTriangle2.png" alt="">
+	 		<img class="ddtriangle2 triangle" src="assets/triangle1.png" alt="">
 	 		<img class="ddtriangle1 med1" src="assets/digitalDesignerTriangle.png" alt="">
 	 		<img class="ddtriangle3 med2" src="assets/digitalDesignerTriangle3.png" alt="">
 	 		<img class="ddtriangle4 fast1" src="assets/digitalDesignerTriangleb.png" alt="">
+	 		<img class="ddWhiteTriangle slow" src="assets/whiteTriangle.png" alt="">
 	 	</section>
 	 	<section class="avidCoder">
 	 		<img class="actitle med1" src="assets/actitle.png">
@@ -183,38 +184,50 @@
 
 	    console.log( "ready!" );
 
+	    $('.triangle').each(function() {
+		  $(this).attr('data-bottom-top', 'opacity: 0.2; transform: translateY(100px)')
+		  $(this).attr('data-top-bottom', 'opacity: 0.7; transform: translateY(-800px)')
+
+		});
+
+		$('.title').each(function() {
+		  $(this).attr('data-bottom-top', 'opacity: 0.7; transform: translateY(100px)')
+		  $(this).attr('data-top-bottom', 'opacity: 0.8; transform: translateY(-300px)')
+
+		});
+
 	    $('.slow').each(function() {
-		  $(this).attr('data-bottom-top', 'opacity: 0.8; transform: translateY(100px)')
+		  $(this).attr('data-bottom-top', 'opacity: 0.7; transform: translateY(100px)')
 		  $(this).attr('data-top-bottom', 'opacity: 1; transform: translateY(-100px)')
 
 		});
 
 		$('.med1').each(function() {
-		  $(this).attr('data-bottom-top', 'opacity: 0.8; transform: translateY(100px)')
+		  $(this).attr('data-bottom-top', 'opacity: 0.7; transform: translateY(100px)')
 		  $(this).attr('data-top-bottom', 'opacity: 1; transform: translateY(-200px)')
 
 		 });
 
 		$('.med2').each(function() {
-		  $(this).attr('data-bottom-top', 'opacity: 0.8; transform: translateY(100px)')
+		  $(this).attr('data-bottom-top', 'opacity: 0.7; transform: translateY(100px)')
 		  $(this).attr('data-top-bottom', 'opacity: 1; transform: translateY(-300px)')
 
 		 });
 
 		$('.fast1').each(function() {
-		  $(this).attr('data-bottom-top', 'opacity: 0.8; transform: translateY(100px)')
+		  $(this).attr('data-bottom-top', 'opacity: 0.7; transform: translateY(100px)')
 		  $(this).attr('data-top-bottom', 'opacity: 1; transform: translateY(-400px)')
 
 		 });
 
 		$('.fast2').each(function() {
-		  $(this).attr('data-bottom-top', 'opacity: 0.8; transform: translateY(100px)')
+		  $(this).attr('data-bottom-top', 'opacity: 0.7; transform: translateY(100px)')
 		  $(this).attr('data-top-bottom', 'opacity: 1; transform: translateY(-500px)')
 
 		 });
 
 		$('.fast3').each(function() {
-		  $(this).attr('data-bottom-top', 'opacity: 0.8; transform: translateY(100px)')
+		  $(this).attr('data-bottom-top', 'opacity: 0.7; transform: translateY(100px)')
 		  $(this).attr('data-top-bottom', 'opacity: 1; transform: translateY(-600px)')
 
 		 });
@@ -222,9 +235,14 @@
 		const backgroundColour = function() {
 			const colours = [
 				'rgb(223,84,255)',
-				'rgb(102,255,178)',
 				'rgb(223,84,255)',
 				'rgb(102,255,178)',
+				'rgb(149,114,255)',
+				'rgb(255,121,213)',
+				'rgb(91,208,255)',
+				'rgb(255,114,156)',
+				'rgb(128,164,237)',
+				'rgb(241,141,161)',
 			]
 
 			const sectionHeight = 2200; 
@@ -233,7 +251,7 @@
 				$('body').attr(`data-${sectionHeight * i}-start`, `background-color: ${colours[i]}`)
 			}
 		};
-
+ 
 		backgroundColour();
 
 		var s = skrollr.init({
